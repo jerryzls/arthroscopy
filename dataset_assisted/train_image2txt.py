@@ -20,7 +20,7 @@ image_files = [f for f in os.listdir(train_image_dir) if f.lower().endswith(imag
 # 将相对路径写入 train.txt 文件
 with open(train_txt_path, 'w', encoding='utf-8') as f:
     for img_name in image_files:
-        relative_path = os.path.join("arthroscopy", "images", stage, img_name).replace('\\', '/')
+        relative_path = os.path.join("arthroscopy_dataset", "images", stage, img_name).replace('\\', '/')
         f.write(f"{relative_path}\n")
 
 print(f"已将 {len(image_files)} 个图像路径写入 {train_txt_path}")
