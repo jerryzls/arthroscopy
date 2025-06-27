@@ -4,7 +4,7 @@
 
 import os
 
-stage = 'val'
+stage = 'train'
 
 # 训练图像所在目录
 train_image_dir = fr"E:\remote\Yolo\arthroscopy_dataset\images\{stage}"
